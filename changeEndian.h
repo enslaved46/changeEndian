@@ -12,7 +12,13 @@ Write your code in this editor and press "Run" button to compile and execute it.
 
 #include "types.h"
 
+
+#define MASKBIT(x) ((unsigned char) (1<< x))
+
+#define MASKBYTE(x) (unsigned int) ( 0XFF << (8*x))
+
 char displayFirstEndianByte(void * data);
 unsigned int LitToBigEndian(unsigned int x);
+unsigned int BigtoLilEndian(unsigned int x);
 
 #endif

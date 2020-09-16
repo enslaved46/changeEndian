@@ -1,5 +1,6 @@
 #ifndef TYPE_H
 #define TYPE_H
+
 typedef  unsigned int u8;
 typedef unsigned long  u32;     /* unsigned 32-bit integer */
 
