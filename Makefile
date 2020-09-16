@@ -1,15 +1,18 @@
 #target : Dependencies
 	#action
 
-output: main.o changeEndian.c 
-	gcc main.c changeEndian.c -o output
+output: main.o changeEndian.o 
+	gcc main.o changeEndian.o  -o output
 
 main.o: main.c
 	gcc -c main.c
 
-changeEndian.o: changeEndian.c changeEndian.h types.h
-	gcc -c changeEndian.c changeEndian.h types.h
+types.o : type.h
+	gcc -c type.h 
+
+changeEndian.o:  types.h changeEndian.c changeEndian.h 
+	gcc -c changeEndian.c
+
 
 clean:
 	rm *.o output
-	
