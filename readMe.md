@@ -1,2 +1,2 @@
 #INFO
-This software implements different algorithms to figure out the Endianess of a Machine. Also, changes the endiness . 
+This program implements different algorithms to figure out the Endianess of a Machine. Also, changes the endiness . 
